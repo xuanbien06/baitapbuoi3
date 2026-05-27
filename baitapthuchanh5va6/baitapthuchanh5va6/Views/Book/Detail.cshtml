@@ -1,0 +1,17 @@
+﻿@model baitapthuchanh5.Models.Book
+
+@{
+    ViewData["Title"] = "Chi tiết sách";
+}
+
+<div class="container mt-4">
+    <h2>Chi tiết sách</h2>
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">@Model.Name</h5>
+            <p class="card-text"><strong>ID:</strong> @Model.Id</p>
+            <p class="card-text"><strong>Giá:</strong> $@Model.Price</p>
+            <a href="/Book/Index" class="btn btn-secondary">Quay lại</a>
+        </div>
+    </div>
+</div>
